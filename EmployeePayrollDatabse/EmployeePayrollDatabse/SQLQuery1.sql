@@ -19,3 +19,7 @@ insert into Employee_PayrollTable values('terissa',20000.0,'2020-5-21'),
 
 select * from Employee_PayrollTable
 select name from Employee_PayrollTable
+
+select * from Employee_PayrollTable where name='terissa'
+select salary from Employee_PayrollTable where name='terissa'
+select * from Employee_PayrollTable where start_date between '2019-10-03' and '2020-07-25'

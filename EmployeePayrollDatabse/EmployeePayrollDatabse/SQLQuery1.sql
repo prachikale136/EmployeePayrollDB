@@ -23,3 +23,8 @@ select name from Employee_PayrollTable
 select * from Employee_PayrollTable where name='terissa'
 select salary from Employee_PayrollTable where name='terissa'
 select * from Employee_PayrollTable where start_date between '2019-10-03' and '2020-07-25'
+
+alter table Employee_PayrollTable add Gender char(1)
+update Employee_PayrollTable set Gender='F' where name='terissa'
+
+update Employee_PayrollTable set gender='F' where id in(1,3)

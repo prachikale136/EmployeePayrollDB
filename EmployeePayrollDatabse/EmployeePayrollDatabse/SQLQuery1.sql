@@ -34,6 +34,10 @@ insert into Employee_PayrollTable values ('Bill',100000.0, '2019-4-12','M'),
 alter table Employee_PayrollTable add
 phone varchar(15),
 address varchar(300) not null default 'India',
-department varchar(50)
+department varchar(50) not null default 'cs'
 
-select * from Employee_PayrollTable
+select * from Employee_PayrollTable 
+alter table Employee_PayrollTable
+drop column department
+
+alter table Employee_PayrollTable add department varchar(50) not null default 'cs'

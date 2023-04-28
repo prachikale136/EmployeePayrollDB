@@ -46,3 +46,6 @@ deduction money,
 taxable_pay money,
 income_tax money,
 net_pay money
+
+insert into Employee_PayrollTable values ('terisa',20000.0,'2020-05-21','F',null,'India','Mechanical',null,null,null,null)
+select * from Employee_PayrollTable

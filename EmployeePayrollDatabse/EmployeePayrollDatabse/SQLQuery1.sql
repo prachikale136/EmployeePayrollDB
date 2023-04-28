@@ -41,3 +41,8 @@ alter table Employee_PayrollTable
 drop column department
 
 alter table Employee_PayrollTable add department varchar(50) not null default 'cs'
+alter table Employee_PayrollTable add
+deduction money,
+taxable_pay money,
+income_tax money,
+net_pay money

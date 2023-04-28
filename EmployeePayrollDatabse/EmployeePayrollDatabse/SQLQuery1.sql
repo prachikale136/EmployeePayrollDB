@@ -28,3 +28,12 @@ alter table Employee_PayrollTable add Gender char(1)
 update Employee_PayrollTable set Gender='F' where name='terissa'
 
 update Employee_PayrollTable set gender='F' where id in(1,3)
+insert into Employee_PayrollTable values ('Bill',100000.0, '2019-4-12','M'),
+('Charlie',220000.0, '2014-5-12','M')
+
+alter table Employee_PayrollTable add
+phone varchar(15),
+address varchar(300) not null default 'India',
+department varchar(50)
+
+select * from Employee_PayrollTable
